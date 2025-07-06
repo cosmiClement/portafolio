@@ -1,5 +1,5 @@
 .contact-section {
-    background:
+  background:
     linear-gradient(to bottom, #00f1fead, transparent 20%),
     linear-gradient(to top, #0dcce5, transparent 20%),
     #0a0a23;
@@ -113,14 +113,50 @@
   transform: scale(1.05);
 }
 
+/* MEDIA QUERIES PARA MÓVILES Y TABLETS */
 @media (max-width: 768px) {
+  .contact-section {
+    padding: 50px 15px;
+  }
+
   .contact-container {
     flex-direction: column;
     align-items: center;
+    gap: 40px;
   }
 
-  .contact-form,
-  .contact-info {
+  .contact-info,
+  .contact-form {
     width: 100%;
+    max-width: 400px;
+  }
+
+  .contact-info h2 {
+    font-size: 1.75rem;
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-socials {
+    font-size: 1.3rem;
+    gap: 15px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .contact-form button {
+    padding: 10px;
+    font-size: 1rem;
   }
 }

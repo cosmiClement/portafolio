@@ -32,7 +32,7 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/Cosmi Clemente Flores" target="_blank" rel="noreferrer"><FaLinkedin /></a>
         <a href="https://github.com/cosmiClement" target="_blank" rel="noreferrer"><FaGithub /></a>
         <a href="https://wa.me/59171714425" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
-        <a href="https://www.tiktok.com/@Clemente" target="_blank" rel="noreferrer"><FaTiktok /></a>
+        <a href="https://www.tiktok.com/@Clementefloresj" target="_blank" rel="noreferrer"><FaTiktok /></a>
       </div>
 
       <div className="footer-links">

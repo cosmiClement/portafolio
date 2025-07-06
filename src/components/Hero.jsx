@@ -1,4 +1,3 @@
-// src/components/Hero.jsx
 import React, { useEffect } from 'react';
 import '../styles/Hero.css';
 import AOS from 'aos';
@@ -41,7 +40,7 @@ const Hero = () => {
       description: "Passionate about creating innovative and functional digital solutions that positively impact the end user.",
       download: "Download CV",
       contact: "Contact me",
-      titles: ["Systems Engineer", 2000, "Web Developer", 2000]
+      titles: ["Frontend Developer", 2000, "Web Developer", 2000]
     }
   };
 
@@ -57,6 +56,7 @@ const Hero = () => {
           Cosmi Clemente<br />
           <span className="highlight">
             <TypeAnimation
+              key={`type-${language}`} // ✅ Esta línea evita el texto sobrepuesto
               sequence={texts[language].titles}
               wrapper="span"
               speed={50}
@@ -73,7 +73,7 @@ const Hero = () => {
           <a href="https://www.linkedin.com/in/Cosmi Clemente Flores" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           <a href="https://github.com/cosmiClement" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
           <a href="https://wa.me/59171714425" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
-          <a href="https://www.tiktok.com/@Clemente" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
+          <a href="https://www.tiktok.com/@Clementefloresj" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
         </div>
       </div>
 
