@@ -1,0 +1,109 @@
+.about-section {
+    background:
+    linear-gradient(to bottom, #00f1fead, transparent 20%),
+    linear-gradient(to top, #0dcce5, transparent 20%),
+    #0a0a23;
+  background-blend-mode: overlay;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #61dafb;
+  margin-bottom: 40px;
+}
+
+/* Layout de tarjetas */
+.info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* Tarjeta individual */
+.info-card {
+  background: #11152e;
+  border: 1px solid #1e90ff55;
+  border-radius: 16px;
+  padding: 30px 20px;
+  width: 300px;
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+  text-align: center;
+  color: white;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.info-card:hover {
+  box-shadow: 0 0 25px #1e90ff88;
+  transform: translateY(-5px);
+}
+
+/* Ícono */
+.info-icon {
+  font-size: 3rem;
+  color: #00bfff;
+  margin-bottom: 15px;
+}
+
+.info-card:hover .info-icon {
+  animation: bounce 0.6s ease;
+}
+
+/* Texto */
+.info-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.info-card p {
+  font-size: 0.95rem;
+  color: #eee;
+  line-height: 1.5;
+}
+
+/* Animación bounce */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Habilidades dentro de tarjeta */
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ccc;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.skill span {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.skill:hover {
+  color: #61dafb;
+  transform: scale(1.1);
+}

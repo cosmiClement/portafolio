@@ -1,0 +1,59 @@
+/* src/styles/SweetAlertCustom.css */
+
+/* Estilos para el fondo del pop-up de SweetAlert2 */
+.swal2-popup.my-swal-popup {
+  background-color: #0a0a23 !important; /* Color de fondo azul oscuro */
+  color: #61dafb !important; /* Color del texto azul claro */
+  border-radius: 12px; /* Mantener bordes redondeados */
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(97, 218, 251, 0.2) !important; /* Sombra más pronunciada y borde sutil azul */
+}
+
+/* Estilos para el título */
+.swal2-title.my-swal-title {
+  color: #61dafb !important; /* Color azul claro para el título */
+}
+
+/* Estilos para el texto del contenido */
+.swal2-html-container.my-swal-text {
+  color: #a0a0b3 !important; /* Un color ligeramente diferente para el texto del contenido para contraste */
+}
+
+/* Estilos para los botones de confirmación/cancelación */
+.swal2-confirm.my-swal-button {
+  background-color: #61dafb !important; /* Color azul claro para el botón principal */
+  color: #0a0a23 !important; /* Texto oscuro para el botón principal */
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.swal2-confirm.my-swal-button:hover {
+  background-color: #4ac7ed !important; /* Un poco más claro al pasar el ratón */
+}
+
+/* Puedes añadir estilos para el botón de cancelar si lo usas */
+/*
+.swal2-cancel.my-swal-button-cancel {
+  background-color: #4a4a66 !important;
+  color: white !important;
+}
+.swal2-cancel.my-swal-button-cancel:hover {
+  background-color: #5a5a77 !important;
+}
+*/
+
+/* Estilos para el icono (opcional, si quieres cambiar su color o tamaño) */
+.swal2-icon.swal2-success .swal2-success-ring {
+  border-color: #61dafb !important;
+}
+.swal2-icon.swal2-success [class^=swal2-success-line] {
+  background-color: #61dafb !important;
+}
+.swal2-icon.swal2-error .swal2-x-mark-line-left,
+.swal2-icon.swal2-error .swal2-x-mark-line-right {
+  background-color: #ff4d4d !important; /* Rojo para el error */
+}
+
+/* Estilos para el fondo del overlay si quieres personalizarlo también */
+.swal2-container.my-swal-overlay {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
