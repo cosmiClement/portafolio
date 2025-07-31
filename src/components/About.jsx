@@ -32,7 +32,7 @@ const About = () => {
       cards: [
         {
           title: "¿Quién Soy?",
-          desc: "Soy un Ingeniero en Sistemas y Desarrollador Web altamente motivado con sólidos conocimientos en desarrollo de software y diseño de interfaces web."
+          desc: "Soy un estudiante de Ingeniería en Sistemas y Desarrollador Web altamente motivado con sólidos conocimientos en desarrollo de software y diseño de interfaces web."
         },
         {
           title: "Mi Objetivo",
@@ -50,7 +50,7 @@ const About = () => {
       cards: [
         {
           title: "Who Am I?",
-          desc: "I am a highly motivated Systems Engineer and Web Developer with solid knowledge in software development and web interface design."
+          desc: "I am a highly motivated Systems Engineering student and Web Developer with strong knowledge in software development and web interface design."
         },
         {
           title: "My Goal",

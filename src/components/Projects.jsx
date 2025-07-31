@@ -46,28 +46,14 @@ const Projects = () => {
       title: 'Aplicación Móvil para la Administración de un Hato Lechero',
       description: 'App desarrollada para gestionar el hato lechero, incluyendo producción, control veterinario y reproducción.',
       role: 'Frontend y Designer',
-      details: `Esta aplicación permite gestionar la producción láctea, control veterinario, y el ciclo reproductivo de manera eficiente.  
-              - Tecnologías usadas: React Native, JavaScript, HTML,CSS, Laravel, MySQL.  
-              - Participé como desarrollador frontend en el desarrollo de una aplicación móvil para la gestión integral de un hato lechero, utilizando React Native como tecnología principal.
-              - Colaboré activamente en el análisis y levantamiento de requerimientos, definiendo junto al equipo las funcionalidades clave del sistema.
-              - Contribuí en el diseño de la interfaz de usuario, asegurando una experiencia fluida, intuitiva y adaptada a dispositivos móviles.
-              - Elaboré manuales de usuario detallados para facilitar la adopción y el correcto uso de la aplicación por parte de los usuarios finales.
-              - Aseguré buenas prácticas de desarrollo móvil, enfocándome en la modularidad del código, la escalabilidad y el rendimiento de la app.  
-              - Funcionalidades: registro de ganado, registro de produccion de leche, calendario para eventos del hato. `,
+      details: `App móvil en React Native con funciones de registro de ganado, producción y calendario. Participé en desarrollo, diseño UI, análisis de requisitos y elaboración de manuales. `,
       screenshots: [hato1,hato2,hato3]
     },
     {
       title: 'Sistema de Inscripciones - Universidad Mayor de San Simón',
       description: 'Sistema web para gestionar inscripciones a olimpiadas estudiantiles, permitiendo registro, inscripciones a diferentes areas de competencia, validaciones de inscripciones por el cajero, validaciones de tutorias,  y generación de reportes.',
       role: 'Frontend y Designer',
-      details: `Sistema desarrollado para facilitar la gestión de inscripciones a olimpiadas estudiantiles.  
-- Tecnologías: HTML, CSS, JavaScript, React, Node.js, SupaBase, Express.js.  
-- Funciones: Registro de usuarios, inscripciones a diferentes áreas de competencia, validaciones de inscripciones por el cajero, validaciones de tutorías, y generación de reportes.  
-- Participé en el desarrollo frontend de una plataforma web destinada a gestionar el proceso de inscripción de estudiantes en las Olimpiadas Estudiantiles.
-- Colaboré activamente en el análisis y levantamiento de requerimientos funcionales y no funcionales del sistema.
-- Contribuí en el diseño de la interfaz de usuario, asegurando una experiencia intuitiva y accesible para los usuarios.
-- Elaboré manuales de usuario detallados que facilitan la comprensión y el uso eficiente de la plataforma.
-- Apliqué buenas prácticas de desarrollo, asegurando un código modular, limpio y mantenible.`,
+      details: `Desarrollada con React y Node.js. Incluye registro, validación y reportes. Participé en desarrollo, análisis de requisitos, diseño UI y manuales de usuario.`,
       screenshots: [umss1, umss2, umss3, umss4]
     },
     {
@@ -75,9 +61,8 @@ const Projects = () => {
       description: 'Sistema web desarrollado para mostrar mi portafolio profesional como desarrollador, integrando animaciones y diseño responsive.',
       role: 'Frontend y Designer',
       details: `Página web para mostrar mi portafolio profesional.  
-- Tecnologías: React, Framer Motion, Tailwind CSS.  
-- Funcionalidades: Animaciones, diseño responsive, contenido dinámico.  
-- Estado: Proyecto personal actualizado.`,
+- Tecnologías: React,HTML, Tailwind CSS.  
+- Funcionalidades: Animaciones, diseño responsive, contenido dinámico.`,
       screenshots: [personal2, personal3, personal4]
     }
   ];

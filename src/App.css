@@ -1,18 +1,16 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden; /* 🔧 evita scroll lateral en móviles */
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  background: #fff;body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
-}
-
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -28,8 +26,11 @@ body {
   display: flex;
   gap: 2rem;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+/* Sección principal (hero) */
 .hero {
   height: 100vh;
   background: linear-gradient(#111, #333);
@@ -38,27 +39,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-  width: 100%;
   padding: 1rem;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
-.navbar ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
+/* Asegúrate de que ningún elemento tenga tamaño fijo excesivo */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.hero {
-  height: 100vh;
-  background: linear-gradient(#111, #333);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Responsivo para íconos flotantes (si usas) */
+@media (max-width: 768px) {
+  .floating-icons {
+    display: none;
+  }
 }

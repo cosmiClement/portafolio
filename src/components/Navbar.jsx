@@ -21,7 +21,7 @@ const Navbar = () => {
         <li><a href="#contact">{language === 'es' ? 'Contacto' : 'Contact'}</a></li>
         <li className="lang-selector">
           <button onClick={() => setDropdownOpen(!dropdownOpen)} className="lang-toggle">
-            🌐 {language === 'es' ? 'Idioma' : 'Language'}
+             {language === 'es' ? 'Idioma' : 'Language'}
           </button>
           {dropdownOpen && (
             <ul className="dropdown-menu">
