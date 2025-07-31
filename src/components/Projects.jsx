@@ -46,14 +46,14 @@ const Projects = () => {
       title: 'Aplicación Móvil para la Administración de un Hato Lechero',
       description: 'App desarrollada para gestionar el hato lechero, incluyendo producción, control veterinario y reproducción.',
       role: 'Frontend y Designer',
-      details: `App móvil en React Native con funciones de registro de ganado, producción y calendario. Participé en desarrollo, diseño UI, análisis de requisitos y elaboración de manuales. `,
+      details: `Desarrollada con React Native, Laravel y MySQL. Incluye registro de ganado, control de producción de leche y calendario de eventos. Participé en el desarrollo frontend, levantamiento de requerimientos, diseño de interfaz, elaboración de manuales y aseguré buenas prácticas de desarrollo móvil. `,
       screenshots: [hato1,hato2,hato3]
     },
     {
       title: 'Sistema de Inscripciones - Universidad Mayor de San Simón',
       description: 'Sistema web para gestionar inscripciones a olimpiadas estudiantiles, permitiendo registro, inscripciones a diferentes areas de competencia, validaciones de inscripciones por el cajero, validaciones de tutorias,  y generación de reportes.',
       role: 'Frontend y Designer',
-      details: `Desarrollada con React y Node.js. Incluye registro, validación y reportes. Participé en desarrollo, análisis de requisitos, diseño UI y manuales de usuario.`,
+      details: `Desarrollada con React, Node.js, Express.js y SupaBase. Permite el registro de usuarios, inscripciones por áreas, validación por cajeros y tutores, y generación de reportes. Participé en el desarrollo frontend, levantamiento de requerimientos, diseño de interfaz, creación de manuales y aplicación de buenas prácticas de desarrollo.`,
       screenshots: [umss1, umss2, umss3, umss4]
     },
     {
