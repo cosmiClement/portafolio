@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 import '../styles/Contact.css';
 import { FaLinkedin, FaGithub, FaWhatsapp, FaTiktok } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import emailjs from 'emailjs-com';
 import { useLanguage } from '../context/LanguageContext';
 import { showSuccessAlert, showErrorAlert } from '../utils/alerts'; // ¡Importa las nuevas funciones!
 
@@ -43,26 +43,27 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const templateParams = {
+      user_name: e.target.user_name.value,
+      user_email: e.target.user_email.value,
+      message: e.target.message.value,
+    };
 
     emailjs
-      .sendForm(
-        'service_6mo0z5d',    // ✅ Tu Service ID
-        'template_kx1kgg6',    // ✅ Tu Template ID
-        form.current,
-        'AChoL9GrWyL10sQWQ'    // ✅ Tu Public Key
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
-      .then(
-        () => {
-          // Usa la función de utilidad para mostrar el éxito
-          showSuccessAlert(content.successTitle, content.successText);
-          form.current.reset(); // Restablece el formulario solo después del éxito
-        },
-        (error) => {
-          // Usa la función de utilidad para mostrar el error
-          showErrorAlert(content.errorTitle, content.errorText);
-          console.error('Error al enviar el correo:', error.text || error); // Log más detallado
-        }
-      );
+      .then((response) => {
+        showSuccessAlert(content.successTitle, content.successText);
+        form.current.reset();
+      })
+      .catch((error) => {
+        showErrorAlert(content.errorTitle, content.errorText);
+        console.error('Error al enviar el correo (EmailJS):', error);
+      });
   };
 
   return (
@@ -78,10 +79,18 @@ const Contact = () => {
           <h2>{content.title}</h2>
           <p>{content.description}</p>
           <div className="contact-socials">
-            <a href="https://www.linkedin.com/in/Cosmi Clemente Flores" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a href="https://github.com/cosmiClement" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-            <a href="https://wa.me/59171714425" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
-            <a href="https://www.tiktok.com/@Clementefloresj" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
+            <a href="https://www.linkedin.com/in/Cosmi-Clemente-Flores" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin />
+            </a>
+            <a href="https://github.com/cosmiClement" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+            <a href="https://wa.me/59171714425" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp />
+            </a>
+            <a href="https://www.tiktok.com/@Clementefloresj" target="_blank" rel="noopener noreferrer">
+              <FaTiktok />
+            </a>
           </div>
         </div>
 
